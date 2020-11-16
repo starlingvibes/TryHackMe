@@ -1,0 +1,29 @@
+# Nmap 7.70 scan initiated Tue Oct 27 16:58:41 2020 as: nmap -sC -sV -oN bookstore_scan -vv 10.10.63.163
+Nmap scan report for 10.10.63.163
+Host is up, received echo-reply ttl 63 (0.16s latency).
+Scanned at 2020-10-27 16:58:45 GMT for 27s
+Not shown: 998 closed ports
+Reason: 998 resets
+PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 e0:c2:1d:6a:e4:cb:9f:68:75:b3:dd:4a:46:79:bb:22 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCf7Lg79L9TN+xzqWrBVFrMfXj8fCoXBuszLLd+HTd26cOPB53BIElLusxKq8bB5Ms06Ezyk6GKKkzmAVpbNRsjjvCUGpiCiSfC+RvzXKYfz00+fDzkbi2NrjrYqvXKA5mTgXpD0+bJp3g6rhxL6hAUz9FCi8yKlmrDo2dD0+w9LNUFnQ6OXLv7798e6IFKY9ZuuSh8t6aB5jYs1d3ctF7QjZtVHfinflStLBy47jQE/7ev+OxS563oppVpgiMCK9weiorBYdVL6VU3D+IgKwMJYj04qo2vBUbEBWVGkdEQv+S8ZED0m5irNiQsi8gqjsj/HqYRtQ9eRmlU60mCuWTt
+|   256 ad:c7:3b:12:f0:e1:de:ea:44:58:60:f8:f2:eb:86:f8 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBKJEo0dPue63DXQ1pm0KQ6fXCqlFilJ7wEPn1YeCMrTVFLg0eb7vtkrBctVD3Yu6fe37VKV+TymFNCHuchCtXAM=
+|   256 32:a4:7a:64:58:0f:c0:01:c2:92:28:50:97:94:44:14 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILNFUGO1ImAlRvRuIYUNpAliijl6JMkNSZ7HeoIFDSIU
+80/tcp open  http    syn-ack ttl 63 Apache httpd 2.4.29 ((Ubuntu))
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Index
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Oct 27 16:59:12 2020 -- 1 IP address (1 host up) scanned in 30.81 seconds

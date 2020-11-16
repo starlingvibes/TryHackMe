@@ -1,0 +1,25 @@
+# Nmap 7.70 scan initiated Tue Oct 27 13:23:10 2020 as: nmap -sC -sV -oN securitymisconfig_scan -vv 10.10.59.155
+Nmap scan report for 10.10.59.155
+Host is up, received echo-reply ttl 63 (0.14s latency).
+Scanned at 2020-10-27 13:23:12 GMT for 26s
+Not shown: 998 closed ports
+Reason: 998 resets
+PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 71:29:0c:f3:c6:ed:43:bf:71:bd:98:45:13:d3:4c:ac (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCl+eUDmAb3jW5sBudsPUuIOrxV5UylCoYHdjqwAAeLlAMN3l0RVJx6nEOPzzH1dpoDk2zblyqYTAOwR9R/oUVLgcPuMAb+WID+vbccHlkTsJ97boKqgIyIokdpoVqu1ikvZU7v9LAY4tC1iLDcWfitXHNk4CWc9MvM6Uknc8ly9c3rvAT6YHPY1u2v3inVG0JGe12Xok+7PpYORNtRas+N/cxwE8MbIOroN5GH5b0qZq3m3uk7OMI5Edg3S5/Elubq13YoJxehLw89sMzVv6PJ8UmR4xd5IY5PBj1UzXzcvIbulh/G0r85eplR3wQg6AvvMqrv98IWY+I90sbsERCr
+|   256 e7:ad:7d:82:d5:39:f7:7c:79:46:8d:8c:71:e3:63:eb (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBDtiOfDQtgzMbPTyE9dOg/X4q1NRvGitl+d4l/6yB+48TQzk3mfwnj7SzgYs9R7moP+Eu9sjxQY7ifINQDri9p4=
+|   256 69:81:36:23:26:a7:ec:a5:5f:92:cb:9f:f5:9f:61:c7 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA2Xwekn6IHLZp8bZXL0C5u2oTn3C2QBCzVKXoCTrBab
+80/tcp open  http    syn-ack ttl 63 Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+|_http-favicon: Unknown favicon MD5: C36ED49F1413DEBF969DB6EF6F59C0AB
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Pensive - Note taking app
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Oct 27 13:23:39 2020 -- 1 IP address (1 host up) scanned in 28.63 seconds

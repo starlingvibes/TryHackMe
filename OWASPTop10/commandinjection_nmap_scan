@@ -1,0 +1,16 @@
+# Nmap 7.70 scan initiated Mon Oct 26 15:08:54 2020 as: nmap -sV -vv -on nmap_scan 10.10.110.147
+Failed to resolve "nmap_scan".
+Increasing send delay for 10.10.110.147 from 0 to 5 due to 207 out of 689 dropped probes since last increase.
+Nmap scan report for 10.10.110.147
+Host is up, received echo-reply ttl 63 (0.35s latency).
+Scanned at 2020-10-26 15:08:56 GMT for 40s
+Not shown: 998 closed ports
+Reason: 998 resets
+PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    syn-ack ttl 63 Apache httpd 2.4.29 ((Ubuntu))
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Oct 26 15:09:36 2020 -- 1 IP address (1 host up) scanned in 41.66 seconds

@@ -1,0 +1,29 @@
+# Nmap 7.70 scan initiated Sun Oct 25 17:24:02 2020 as: nmap -O -oN os_scan 10.10.9.178
+Nmap scan report for 10.10.9.178
+Host is up (0.21s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3128/tcp open  squid-http
+3333/tcp open  dec-notes
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.70%E=4%D=10/25%OT=21%CT=1%CU=38621%PV=Y%DS=2%DC=I%G=Y%TM=5F95B4
+OS:F4%P=x86_64-pc-linux-gnu)SEQ(SP=105%GCD=1%ISR=10D%TI=Z%CI=I%TS=8)SEQ(SP=
+OS:107%GCD=1%ISR=10C%TI=Z%TS=8)SEQ(SP=105%GCD=1%ISR=10D%TI=Z%CI=I%II=I%TS=7
+OS:)SEQ(SP=105%GCD=1%ISR=10D%TI=Z%II=I%TS=8)OPS(O1=M508ST11NW6%O2=M508ST11N
+OS:W6%O3=M508NNT11NW6%O4=M508ST11NW6%O5=M508ST11NW6%O6=M508ST11)WIN(W1=68DF
+OS:%W2=68DF%W3=68DF%W4=68DF%W5=68DF%W6=68DF)ECN(R=Y%DF=Y%T=40%W=6903%O=M508
+OS:NNSNW6%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R
+OS:=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=
+OS:AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=
+OS:40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID
+OS:=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 2 hops
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Oct 25 17:25:08 2020 -- 1 IP address (1 host up) scanned in 67.20 seconds

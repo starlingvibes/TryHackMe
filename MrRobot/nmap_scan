@@ -1,0 +1,11 @@
+# Nmap 7.70 scan initiated Sun Oct 25 13:38:32 2020 as: nmap -sV -oN nmap_scan 10.10.221.47
+Nmap scan report for 10.10.221.47
+Host is up (0.27s latency).
+Not shown: 997 filtered ports
+PORT    STATE  SERVICE  VERSION
+22/tcp  closed ssh
+80/tcp  open   http     Apache httpd
+443/tcp open   ssl/http Apache httpd
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Oct 25 13:40:13 2020 -- 1 IP address (1 host up) scanned in 100.97 seconds

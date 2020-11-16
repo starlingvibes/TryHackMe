@@ -1,0 +1,8 @@
+/.hta (Status: 403)
+/.hta.txt (Status: 403)
+/.htaccess (Status: 403)
+/.htaccess.txt (Status: 403)
+/.htpasswd (Status: 403)
+/.htpasswd.txt (Status: 403)
+/index.html (Status: 200)
+/secret.txt (Status: 200)

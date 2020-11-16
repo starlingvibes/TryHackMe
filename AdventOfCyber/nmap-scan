@@ -1,0 +1,23 @@
+# Nmap 7.70 scan initiated Mon Nov  2 14:57:53 2020 as: nmap -sC -sV -oN nmap-scan 10.10.253.108
+Nmap scan report for 10.10.253.108
+Host is up (0.16s latency).
+Not shown: 997 closed ports
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 31:b4:d9:31:5e:3f:3f:3a:f7:e0:e1:13:29:74:b5:77 (RSA)
+|   256 a1:eb:6b:58:b5:9c:ab:23:4c:32:d8:45:42:f6:49:eb (ECDSA)
+|_  256 94:17:67:19:99:e4:17:b4:d1:24:a4:c4:ad:9f:64:64 (ED25519)
+111/tcp open  rpcbind 2-4 (RPC #100000)
+| rpcinfo: 
+|   program version   port/proto  service
+|   100000  2,3,4        111/tcp  rpcbind
+|   100000  2,3,4        111/udp  rpcbind
+|   100024  1          41973/udp  status
+|_  100024  1          57231/tcp  status
+999/tcp open  http    SimpleHTTPServer 0.6 (Python 3.6.8)
+|_http-server-header: SimpleHTTP/0.6 Python/3.6.8
+|_http-title: Directory listing for /
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Nov  2 14:58:32 2020 -- 1 IP address (1 host up) scanned in 38.74 seconds
