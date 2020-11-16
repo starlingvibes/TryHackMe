@@ -8,7 +8,7 @@ It consists of tons of rooms, which are virtual classrooms dedicated to particul
 
 - [starlingroot](https://tryhackme.com/p/starlingroot)
 
-## TryHackMe room(s) completed
+## TryHackMe rooms completed
 
 | Room                                                                                       | Tags                                          | Difficulty   | Description                                                                                                         |
 | ----------------------------------------------------------------------------------------------- | ----------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------- |
@@ -17,3 +17,4 @@ It consists of tons of rooms, which are virtual classrooms dedicated to particul
 | [Blue](https://tryhackme.com/room/blue)                           | windows, eternalblue, ms17-010, cve-2017-0144                         | Easy         | Deploy and hack into a Windows machine, leveraging common misconfiguration issues                                                                                           |
 | [CC: Steganography](https://tryhackme.com/room/ccstego)                         | security, steg, secret, steganography                          | Easy         | A crash course on the topic of steganography                                                                        |
 | [CC: Pentesting](https://tryhackme.com/room/ccpentesting)                       | security, pentesting, beginner                  | Easy         | A crash course on various topics in penetration testing                                                                                                  |
+| [CTF Collection Vol. 1](https://tryhackme.com/room/ctfcollectionvol1)                 | capture the flag, stego, crypto, binary                       | Easy         | Sharpening up your CTF skills with the collection. The first volume is designed for beginners                                                   |
