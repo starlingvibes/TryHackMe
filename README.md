@@ -6,8 +6,8 @@ It consists of tons of rooms, which are virtual classrooms dedicated to particul
 
 ## My profile
 
-- <img src="./starlingroot.png">
-[starlingroot](https://tryhackme.com/p/starlingroot)
+<img src="./starlingroot.png">
+- [starlingroot](https://tryhackme.com/p/starlingroot)
 
 ## TryHackMe rooms completed
 
