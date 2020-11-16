@@ -19,4 +19,4 @@ It consists of tons of rooms, which are virtual classrooms dedicated to particul
 | [CC: Pentesting](https://tryhackme.com/room/ccpentesting)                       | security, pentesting, beginner                  | Easy         | A crash course on various topics in penetration testing                                                                                                  |
 | [CTF Collection Vol. 1](https://tryhackme.com/room/ctfcollectionvol1)                 | capture the flag, stego, crypto, binary                       | Easy         | Sharpening up your CTF skills with the collection. The first volume is designed for beginners                                                   |
 | [Crypto 101](https://tryhackme.com/room/encryptioncrypto101)                               | security, crypto, 101, encryption      | Easy | An Introduction to cryptography as part of a series on Crypto |
-
+| [Golden Eye](https://tryhackme.com/room/goldeneye)                            | hydra, email, enumeration, nmap                        | Medium | Bond, James Bond. A guided CTF                                                                 |
