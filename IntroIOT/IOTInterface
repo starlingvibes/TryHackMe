@@ -1,0 +1,3 @@
+IP: 192.168.0.100
+
+Creating a port forward: ssh -N iot@10.10.122.20 -L 8081:192.168.0.100:80

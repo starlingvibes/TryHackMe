@@ -1,0 +1,6 @@
+CONFIG FILES
+OpenVPN auth.txt - user:password321
+irssi - autosendcmd = "/msg nickserv identify password321 ;wait 2000"
+
+HISTORY
+mysql -h somehost.local -uroot -ppassword123

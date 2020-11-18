@@ -1,0 +1,7 @@
+
+BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
+02:1A:11:FF:D9:BD, 2019-12-26 18:36:48, 2019-12-26 18:37:04, 11,  65, WPA2, CCMP, PSK, -43,      154,      254,   0.  0.  0.  0,  13, James Honor 8, 
+
+Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
+6C:88:14:02:A8:58, 2019-12-26 18:36:50, 2019-12-26 18:37:03, -34,      176, 02:1A:11:FF:D9:BD,
+

@@ -1,0 +1,9 @@
+# Nmap 7.80 scan initiated Sat Nov 14 20:26:44 2020 as: nmap -p 80 -sV -oN port80 10.10.54.98
+Nmap scan report for 10.10.54.98
+Host is up (0.74s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.7 ((Ubuntu))
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Nov 14 20:27:01 2020 -- 1 IP address (1 host up) scanned in 17.12 seconds

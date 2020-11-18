@@ -1,0 +1,107 @@
+/ (fcn) main 283
+|   int main (int argc, char **argv, char **envp);
+|           ; var int32_t var_44h @ rbp-0x44
+|           ; var int32_t var_40h @ rbp-0x40
+|           ; var int32_t var_3ch @ rbp-0x3c
+|           ; var int32_t var_38h @ rbp-0x38
+|           ; var int32_t var_2eh @ rbp-0x2e
+|           ; var int32_t var_23h @ rbp-0x23
+|           ; var int32_t var_18h @ rbp-0x18
+|           ; DATA XREF from entry0 (0x5615fcc3470d)
+|           0x5615fcc347fa      55             pushq %rbp
+|           0x5615fcc347fb      4889e5         movq %rsp, %rbp
+|           0x5615fcc347fe      53             pushq %rbx
+|           0x5615fcc347ff      4883ec48       subq $0x48, %rsp        ; 'H'
+|           0x5615fcc34803      64488b042528.  movq %fs:0x28, %rax     ; [0x28:8]=-1 ; '(' ; 40
+|           0x5615fcc3480c      488945e8       movq %rax, var_18h
+|           0x5615fcc34810      31c0           xorl %eax, %eax
+|           0x5615fcc34812      488d358f0100.  leaq 0x5615fcc349a8, %rsi ; "r"
+|           0x5615fcc34819      488d3d900100.  leaq str.home_tryhackme_install_files_secret.txt, %rdi ; 0x5615fcc349b0 ; "/home/tryhackme/install-files/secret.txt"
+|           0x5615fcc34820      e89bfeffff     callq sym.imp.fopen     ; file*fopen(const char *filename, const char *mode)
+|           0x5615fcc34825      488945c8       movq %rax, var_38h
+|           0x5615fcc34829      488b55c8       movq var_38h, %rdx
+|           0x5615fcc3482d      488d45d2       leaq var_2eh, %rax
+|           0x5615fcc34831      4889d1         movq %rdx, %rcx
+|           0x5615fcc34834      ba0b000000     movl $0xb, %edx         ; rdx
+|           0x5615fcc34839      be01000000     movl $1, %esi
+|           0x5615fcc3483e      4889c7         movq %rax, %rdi
+|           0x5615fcc34841      e84afeffff     callq sym.imp.fread     ; size_t fread(void *ptr, size_t size, size_t nmemb, FILE *stream)
+|           0x5615fcc34846      8945c4         movl %eax, var_3ch
+|           ;-- rip:
+|           0x5615fcc34849 b    837dc400       cmpl $0, var_3ch
+|       ,=< 0x5615fcc3484d      7916           jns 0x5615fcc34865
+|       |   0x5615fcc3484f      488d3d830100.  leaq str.Error_Reading_File, %rdi ; 0x5615fcc349d9 ; "Error Reading File"
+|       |   0x5615fcc34856      e825feffff     callq sym.imp.puts      ; int puts(const char *s)
+|       |   0x5615fcc3485b      b8ffffffff     movl $0xffffffff, %eax  ; -1
+|      ,==< 0x5615fcc34860      e995000000     jmp 0x5615fcc348fa
+|      |`-> 0x5615fcc34865      488d3d800100.  leaq str.Please_enter_password, %rdi ; 0x5615fcc349ec ; "Please enter password"
+|      |    0x5615fcc3486c      e80ffeffff     callq sym.imp.puts      ; int puts(const char *s)
+|      |    0x5615fcc34871      488d45dd       leaq var_23h, %rax
+|      |    0x5615fcc34875      4889c6         movq %rax, %rsi
+|      |    0x5615fcc34878      488d3d830100.  leaq str.11s, %rdi      ; 0x5615fcc34a02 ; "%11s"
+|      |    0x5615fcc3487f      b800000000     movl $0, %eax
+|      |    0x5615fcc34884      e847feffff     callq sym.imp.__isoc99_scanf ; int scanf(const char *format)
+|      |    0x5615fcc34889      c745bc090000.  movl $9, var_44h
+|      |    0x5615fcc34890      c745c0000000.  movl $0, var_40h
+|      |,=< 0x5615fcc34897      eb33           jmp 0x5615fcc348cc
+|     .---> 0x5615fcc34899      8b45bc         movl var_44h, %eax
+|     :||   0x5615fcc3489c      4898           cltq
+|     :||   0x5615fcc3489e      0fb65405d2     movzbl -0x2e(%rbp, %rax), %edx
+|     :||   0x5615fcc348a3      8b45c0         movl var_40h, %eax
+|     :||   0x5615fcc348a6      4898           cltq
+|     :||   0x5615fcc348a8      0fb64405dd     movzbl -0x23(%rbp, %rax), %eax
+|     :||   0x5615fcc348ad      38c2           cmpb %al, %dl
+|    ,====< 0x5615fcc348af      7413           je 0x5615fcc348c4
+|    |:||   0x5615fcc348b1      488d3d4f0100.  leaq str.Wrong_Password, %rdi ; 0x5615fcc34a07 ; "Wrong Password"
+|    |:||   0x5615fcc348b8      e8c3fdffff     callq sym.imp.puts      ; int puts(const char *s)
+|    |:||   0x5615fcc348bd      b8ffffffff     movl $0xffffffff, %eax  ; -1
+|   ,=====< 0x5615fcc348c2      eb36           jmp 0x5615fcc348fa
+|   |`----> 0x5615fcc348c4      836dbc01       subl $1, var_44h
+|   | :||   0x5615fcc348c8      8345c001       addl $1, var_40h
+|   | :||   ; CODE XREF from main (0x5615fcc34897)
+|   | :|`-> 0x5615fcc348cc      837dbc00       cmpl $0, var_44h
+|   | :|,=< 0x5615fcc348d0      7e17           jle 0x5615fcc348e9
+|   | :||   0x5615fcc348d2      8b45c0         movl var_40h, %eax
+|   | :||   0x5615fcc348d5      4863d8         movslq %eax, %rbx
+|   | :||   0x5615fcc348d8      488d45dd       leaq var_23h, %rax
+|   | :||   0x5615fcc348dc      4889c7         movq %rax, %rdi
+|   | :||   0x5615fcc348df      e8bcfdffff     callq sym.imp.strlen    ; size_t strlen(const char *s)
+|   | :||   0x5615fcc348e4      4839c3         cmpq %rax, %rbx
+|   | `===< 0x5615fcc348e7      72b0           jb 0x5615fcc34899
+|   |  |`-> 0x5615fcc348e9      488d3d260100.  leaq str.Correct_Password, %rdi ; 0x5615fcc34a16 ; "Correct Password"
+|   |  |    0x5615fcc348f0      e88bfdffff     callq sym.imp.puts      ; int puts(const char *s)
+|   |  |    0x5615fcc348f5      b800000000     movl $0, %eax
+|   |  |    ; CODE XREFS from main (0x5615fcc34860, 0x5615fcc348c2)
+|   `--`--> 0x5615fcc348fa      488b4de8       movq var_18h, %rcx
+|           0x5615fcc348fe      6448330c2528.  xorq %fs:0x28, %rcx
+|       ,=< 0x5615fcc34907      7405           je 0x5615fcc3490e
+|       |   0x5615fcc34909      e8a2fdffff     callq sym.imp.__stack_chk_fail ; void __stack_chk_fail(void)
+|       `-> 0x5615fcc3490e      4883c448       addq $0x48, %rsp        ; 'H'
+|           0x5615fcc34912      5b             popq %rbx
+|           0x5615fcc34913      5d             popq %rbp
+\           0x5615fcc34914      c3             retq
+
+
+
+
+- offset -       0 1  2 3  4 5  6 7  8 9  A B  C D  E F  0123456789ABCDEF
+0x7ffdd1c4e654  0b00 0000 6012 85fd 1556 0000 a029 7673  ....`....V...)vs
+0x7ffdd1c4e664  3363 7572 6570 7764 0a00 0000 2049 c3fc  3curepwd.... I..
+0x7ffdd1c4e674  1556 0000 00bf a7fb 70d3 8f88 70e7 c4d1  .V......p...p...
+0x7ffdd1c4e684  fd7f 0000 0000 0000 0000 0000 2049 c3fc  ............ I..
+0x7ffdd1c4e694  1556 0000 972b 4b46 ef7f 0000 0100 0000  .V...+KF........
+0x7ffdd1c4e6a4  0000 0000 78e7 c4d1 fd7f 0000 0080 0000  ....x...........
+0x7ffdd1c4e6b4  0100 0000 fa47 c3fc 1556 0000 0000 0000  .....G...V......
+0x7ffdd1c4e6c4  0000 0000 1f4c ebc0 12a2 e6d4 f046 c3fc  .....L.......F..
+0x7ffdd1c4e6d4  1556 0000 70e7 c4d1 fd7f 0000 0000 0000  .V..p...........
+0x7ffdd1c4e6e4  0000 0000 0000 0000 0000 0000 1f4c eb9f  .............L..
+0x7ffdd1c4e6f4  1df8 3687 1f4c 3504 02d7 1387 0000 0000  ..6..L5.........
+0x7ffdd1c4e704  fd7f 0000 0000 0000 0000 0000 0000 0000  ................
+0x7ffdd1c4e714  0000 0000 3327 8946 ef7f 0000 3886 8746  ....3'.F....8..F
+0x7ffdd1c4e724  ef7f 0000 a38e 0a00 0000 0000 0000 0000  ................
+0x7ffdd1c4e734  0000 0000 0000 0000 0000 0000 0000 0000  ................
+0x7ffdd1c4e744  0000 0000 f046 c3fc 1556 0000 70e7 c4d1  .....F...V..p...
+
+
+Password: vs3curepwd
+Expected answer: dwperuc3sv

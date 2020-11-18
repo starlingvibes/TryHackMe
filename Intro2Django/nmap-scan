@@ -1,0 +1,112 @@
+# Nmap 7.80 scan initiated Mon Nov 16 21:49:42 2020 as: nmap -sV -sC -oN nmap-scan 10.10.17.4
+Nmap scan report for 10.10.17.4
+Host is up (0.68s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE  VERSION
+22/tcp   open  ssh      OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 35:30:91:45:b9:d1:ed:5a:13:42:3e:20:95:6d:c7:b7 (RSA)
+|   256 f5:69:6a:7b:c8:ac:89:b5:38:93:50:2f:05:24:22:70 (ECDSA)
+|_  256 8f:4d:37:ba:40:12:05:fa:f0:e6:d6:82:fb:65:52:e8 (ED25519)
+8000/tcp open  http-alt WSGIServer/0.2 CPython/3.6.9
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 400 Bad Request
+|     Date: Mon, 16 Nov 2020 20:51:17 GMT
+|     Server: WSGIServer/0.2 CPython/3.6.9
+|     Content-Type: text/html
+|     Connection: close
+|     <!DOCTYPE html>
+|     <html lang="en">
+|     <head>
+|     <meta http-equiv="content-type" content="text/html; charset=utf-8">
+|     <meta name="robots" content="NONE,NOARCHIVE">
+|     <title>DisallowedHost
+|     /nice ports,/Trinity.txt.bak</title>
+|     <style type="text/css">
+|     html * { padding:0; margin:0; }
+|     body * { padding:10px 20px; }
+|     body * * { padding:0; }
+|     body { font:small sans-serif; background-color:#fff; color:#000; }
+|     body>div { border-bottom:1px solid #ddd; }
+|     font-weight:normal; }
+|     margin-bottom:.8em; }
+|     margin:1em 0 .5em 0; }
+|     margin:0 0 .5em 0; font-weight: normal; }
+|     code, pre { font-size: 100%; white-space: pre-wrap; }
+|     table { border:1px solid #ccc; border-collapse: collapse; width:100%; ba
+|   GetRequest: 
+|     HTTP/1.1 400 Bad Request
+|     Date: Mon, 16 Nov 2020 20:51:10 GMT
+|     Server: WSGIServer/0.2 CPython/3.6.9
+|     Content-Type: text/html
+|     Connection: close
+|     <!DOCTYPE html>
+|     <html lang="en">
+|     <head>
+|     <meta http-equiv="content-type" content="text/html; charset=utf-8">
+|     <meta name="robots" content="NONE,NOARCHIVE">
+|     <title>DisallowedHost
+|     /</title>
+|     <style type="text/css">
+|     html * { padding:0; margin:0; }
+|     body * { padding:10px 20px; }
+|     body * * { padding:0; }
+|     body { font:small sans-serif; background-color:#fff; color:#000; }
+|     body>div { border-bottom:1px solid #ddd; }
+|     font-weight:normal; }
+|     margin-bottom:.8em; }
+|     margin:1em 0 .5em 0; }
+|     margin:0 0 .5em 0; font-weight: normal; }
+|     code, pre { font-size: 100%; white-space: pre-wrap; }
+|     table { border:1px solid #ccc; border-collapse: collapse; width:100%; background:white; }
+|_    tbody
+|_http-server-header: WSGIServer/0.2 CPython/3.6.9
+|_http-title: DisallowedHost          at /
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8000-TCP:V=7.80%I=7%D=11/16%Time=5FB2E63C%P=x86_64-pc-linux-gnu%r(G
+SF:etRequest,2CF6,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x20
+SF:16\x20Nov\x202020\x2020:51:10\x20GMT\r\nServer:\x20WSGIServer/0\.2\x20C
+SF:Python/3\.6\.9\r\nContent-Type:\x20text/html\r\nConnection:\x20close\r\
+SF:n\r\n<!DOCTYPE\x20html>\n<html\x20lang=\"en\">\n<head>\n\x20\x20<meta\x
+SF:20http-equiv=\"content-type\"\x20content=\"text/html;\x20charset=utf-8\
+SF:">\n\x20\x20<meta\x20name=\"robots\"\x20content=\"NONE,NOARCHIVE\">\n\x
+SF:20\x20<title>DisallowedHost\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20at
+SF:\x20/</title>\n\x20\x20<style\x20type=\"text/css\">\n\x20\x20\x20\x20ht
+SF:ml\x20\*\x20{\x20padding:0;\x20margin:0;\x20}\n\x20\x20\x20\x20body\x20
+SF:\*\x20{\x20padding:10px\x2020px;\x20}\n\x20\x20\x20\x20body\x20\*\x20\*
+SF:\x20{\x20padding:0;\x20}\n\x20\x20\x20\x20body\x20{\x20font:small\x20sa
+SF:ns-serif;\x20background-color:#fff;\x20color:#000;\x20}\n\x20\x20\x20\x
+SF:20body>div\x20{\x20border-bottom:1px\x20solid\x20#ddd;\x20}\n\x20\x20\x
+SF:20\x20h1\x20{\x20font-weight:normal;\x20}\n\x20\x20\x20\x20h2\x20{\x20m
+SF:argin-bottom:\.8em;\x20}\n\x20\x20\x20\x20h3\x20{\x20margin:1em\x200\x2
+SF:0\.5em\x200;\x20}\n\x20\x20\x20\x20h4\x20{\x20margin:0\x200\x20\.5em\x2
+SF:00;\x20font-weight:\x20normal;\x20}\n\x20\x20\x20\x20code,\x20pre\x20{\
+SF:x20font-size:\x20100%;\x20white-space:\x20pre-wrap;\x20}\n\x20\x20\x20\
+SF:x20table\x20{\x20border:1px\x20solid\x20#ccc;\x20border-collapse:\x20co
+SF:llapse;\x20width:100%;\x20background:white;\x20}\n\x20\x20\x20\x20tbody
+SF:")%r(FourOhFourRequest,2CF6,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate
+SF::\x20Mon,\x2016\x20Nov\x202020\x2020:51:17\x20GMT\r\nServer:\x20WSGISer
+SF:ver/0\.2\x20CPython/3\.6\.9\r\nContent-Type:\x20text/html\r\nConnection
+SF::\x20close\r\n\r\n<!DOCTYPE\x20html>\n<html\x20lang=\"en\">\n<head>\n\x
+SF:20\x20<meta\x20http-equiv=\"content-type\"\x20content=\"text/html;\x20c
+SF:harset=utf-8\">\n\x20\x20<meta\x20name=\"robots\"\x20content=\"NONE,NOA
+SF:RCHIVE\">\n\x20\x20<title>DisallowedHost\n\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20at\x20/nice\x20ports,/Trinity\.txt\.bak</title>\n\x20\x20<st
+SF:yle\x20type=\"text/css\">\n\x20\x20\x20\x20html\x20\*\x20{\x20padding:0
+SF:;\x20margin:0;\x20}\n\x20\x20\x20\x20body\x20\*\x20{\x20padding:10px\x2
+SF:020px;\x20}\n\x20\x20\x20\x20body\x20\*\x20\*\x20{\x20padding:0;\x20}\n
+SF:\x20\x20\x20\x20body\x20{\x20font:small\x20sans-serif;\x20background-co
+SF:lor:#fff;\x20color:#000;\x20}\n\x20\x20\x20\x20body>div\x20{\x20border-
+SF:bottom:1px\x20solid\x20#ddd;\x20}\n\x20\x20\x20\x20h1\x20{\x20font-weig
+SF:ht:normal;\x20}\n\x20\x20\x20\x20h2\x20{\x20margin-bottom:\.8em;\x20}\n
+SF:\x20\x20\x20\x20h3\x20{\x20margin:1em\x200\x20\.5em\x200;\x20}\n\x20\x2
+SF:0\x20\x20h4\x20{\x20margin:0\x200\x20\.5em\x200;\x20font-weight:\x20nor
+SF:mal;\x20}\n\x20\x20\x20\x20code,\x20pre\x20{\x20font-size:\x20100%;\x20
+SF:white-space:\x20pre-wrap;\x20}\n\x20\x20\x20\x20table\x20{\x20border:1p
+SF:x\x20solid\x20#ccc;\x20border-collapse:\x20collapse;\x20width:100%;\x20
+SF:ba");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Nov 16 21:53:29 2020 -- 1 IP address (1 host up) scanned in 227.31 seconds

@@ -1,0 +1,11 @@
+# Nmap 7.80 scan initiated Tue Nov 10 07:30:59 2020 as: nmap -sV -oN nmap-scan 10.10.122.20
+Nmap scan report for 10.10.122.20
+Host is up (0.15s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE       VERSION
+22/tcp   open  ssh           OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+3389/tcp open  ms-wbt-server xrdp
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Nov 10 07:31:30 2020 -- 1 IP address (1 host up) scanned in 31.40 seconds

