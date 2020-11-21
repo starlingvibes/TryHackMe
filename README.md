@@ -1,4 +1,10 @@
-# About TryHackMe
+# What's inside?
+<img src="./whatsincluded.png">
+Well... nmap scans, directory listings, thought process while going through the challenge, exploit codes et al
+
+NB: No direct flags, try harder! :-)
+
+## About TryHackMe
 
 [TryHackMe](https://tryhackme.com/) is an online platform for learning and teaching cybersecurity, which is beginner-friendly and versatile in different topics.
 
