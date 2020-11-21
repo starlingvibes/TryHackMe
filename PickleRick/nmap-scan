@@ -1,0 +1,21 @@
+# Nmap 7.80 scan initiated Fri Nov 20 06:39:40 2020 as: nmap -sV -sC -oN nmap-scan 10.10.198.201
+Nmap scan report for 10.10.198.201
+Host is up (0.69s latency).
+Not shown: 993 closed ports
+PORT      STATE    SERVICE       VERSION
+22/tcp    open     ssh           OpenSSH 7.2p2 Ubuntu 4ubuntu2.6 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 58:07:56:cc:a1:29:95:2a:3f:fc:2f:0a:c8:1c:82:83 (RSA)
+|   256 4b:66:16:a6:76:b4:29:17:3f:eb:70:84:11:7d:b5:3a (ECDSA)
+|_  256 09:54:42:6c:9f:87:16:b2:20:e8:a0:8b:6b:9d:37:e7 (ED25519)
+80/tcp    open     http          Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+1556/tcp  filtered veritas_pbx
+5120/tcp  filtered barracuda-bbs
+5925/tcp  filtered unknown
+8192/tcp  filtered sophos
+49158/tcp filtered unknown
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Nov 20 06:41:51 2020 -- 1 IP address (1 host up) scanned in 132.10 seconds

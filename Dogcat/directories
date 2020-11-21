@@ -1,0 +1,6 @@
+/.hta (Status: 403)
+/.htpasswd (Status: 403)
+/.htaccess (Status: 403)
+/cats (Status: 301)
+/index.php (Status: 200)
+/server-status (Status: 403)

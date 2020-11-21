@@ -1,0 +1,4 @@
+- ssh django-admin@MACHINE_IP with supplied password
+- Modify settings.py file to include your network host
+- Create a new superuser with manage.py and login at http://MACHINE_IP:8000/admin
+- Crack Superfox's password with crackstation.net and login in with the account

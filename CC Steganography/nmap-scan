@@ -1,0 +1,11 @@
+# Nmap 7.80 scan initiated Wed Nov 18 12:11:40 2020 as: nmap -sC -sV -oN nmap-scan 10.10.248.63
+Nmap scan report for 10.10.248.63
+Host is up (0.74s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Test1
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Nov 18 12:13:30 2020 -- 1 IP address (1 host up) scanned in 110.84 seconds

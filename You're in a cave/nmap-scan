@@ -1,0 +1,27 @@
+# Nmap 7.80 scan initiated Thu Nov 19 16:32:46 2020 as: nmap -sV -sC -oN nmap-scan 10.10.239.234
+Nmap scan report for 10.10.239.234
+Host is up (0.72s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE    VERSION
+80/tcp   open  http       Apache httpd 2.4.41 ((Ubuntu))
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+2222/tcp open  ssh        OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)
+3333/tcp open  dec-notes?
+| fingerprint-strings: 
+|   GenericLines, LPDString: 
+|     You find yourself in a cave, what do you do?
+|     Nothing happens
+|   JavaRMI, NULL: 
+|_    You find yourself in a cave, what do you do?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3333-TCP:V=7.80%I=7%D=11/19%Time=5FB690A6%P=x86_64-pc-linux-gnu%r(N
+SF:ULL,2D,"You\x20find\x20yourself\x20in\x20a\x20cave,\x20what\x20do\x20yo
+SF:u\x20do\?\n")%r(GenericLines,3D,"You\x20find\x20yourself\x20in\x20a\x20
+SF:cave,\x20what\x20do\x20you\x20do\?\nNothing\x20happens\n")%r(LPDString,
+SF:3D,"You\x20find\x20yourself\x20in\x20a\x20cave,\x20what\x20do\x20you\x2
+SF:0do\?\nNothing\x20happens\n")%r(JavaRMI,2D,"You\x20find\x20yourself\x20
+SF:in\x20a\x20cave,\x20what\x20do\x20you\x20do\?\n");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Nov 19 16:36:11 2020 -- 1 IP address (1 host up) scanned in 204.62 seconds
