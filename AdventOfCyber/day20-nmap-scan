@@ -1,0 +1,16 @@
+# Nmap 7.80 scan initiated Mon Nov 23 16:24:39 2020 as: nmap -sC -sV -oN day20-nmap-scan 10.10.57.112
+Nmap scan report for 10.10.57.112
+Host is up (0.69s latency).
+Not shown: 997 closed ports
+PORT     STATE    SERVICE    VERSION
+1494/tcp filtered citrix-ica
+1801/tcp filtered msmq
+4567/tcp open     ssh        OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 5d:43:5d:2a:b5:83:fe:9d:f5:a5:28:cf:15:b9:c8:89 (RSA)
+|   256 60:ed:07:7d:a2:d3:68:48:92:d5:06:e8:d7:3a:13:0a (ECDSA)
+|_  256 f3:0d:0a:8a:50:62:6c:38:8f:39:d7:67:fb:ea:04:12 (ED25519)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Nov 23 16:27:08 2020 -- 1 IP address (1 host up) scanned in 148.96 seconds

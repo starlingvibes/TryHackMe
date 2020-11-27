@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE items [
+<!ELEMENT items (item*)>
+<!ATTLIST items burpVersion CDATA "">
+<!ATTLIST items exportTime CDATA "">
+<!ELEMENT item (time, url, host, port, protocol, method, path, extension, request, status, responselength, mimetype, response, comment)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ATTLIST host ip CDATA "">
+<!ELEMENT port (#PCDATA)>
+<!ELEMENT protocol (#PCDATA)>
+<!ELEMENT method (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+<!ELEMENT request (#PCDATA)>
+<!ATTLIST request base64 (true|false) "false">
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT responselength (#PCDATA)>
+<!ELEMENT mimetype (#PCDATA)>
+<!ELEMENT response (#PCDATA)>
+<!ATTLIST response base64 (true|false) "false">
+<!ELEMENT comment (#PCDATA)>
+]>
+<items burpVersion="2020.8" exportTime="Tue Nov 24 12:00:53 WAT 2020">
+  <item>
+    <time>Tue Nov 24 12:00:10 WAT 2020</time>
+    <url><![CDATA[http://10.10.128.64/register.php]]></url>
+    <host ip="10.10.128.64">10.10.128.64</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/register.php]]></path>
+    <extension>php</extension>
+    <request base64="true"><![CDATA[UE9TVCAvcmVnaXN0ZXIucGhwIEhUVFAvMS4xDQpIb3N0OiAxMC4xMC4xMjguNjQNClVzZXItQWdlbnQ6IE1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IHJ2Ojc4LjApIEdlY2tvLzIwMTAwMTAxIEZpcmVmb3gvNzguMA0KQWNjZXB0OiB0ZXh0L2h0bWwsYXBwbGljYXRpb24veGh0bWwreG1sLGFwcGxpY2F0aW9uL3htbDtxPTAuOSxpbWFnZS93ZWJwLCovKjtxPTAuOA0KQWNjZXB0LUxhbmd1YWdlOiBlbi1VUyxlbjtxPTAuNQ0KQWNjZXB0LUVuY29kaW5nOiBnemlwLCBkZWZsYXRlDQpDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL3gtd3d3LWZvcm0tdXJsZW5jb2RlZA0KQ29udGVudC1MZW5ndGg6IDY1DQpPcmlnaW46IGh0dHA6Ly8xMC4xMC4xMjguNjQNCkROVDogMQ0KQ29ubmVjdGlvbjogY2xvc2UNClJlZmVyZXI6IGh0dHA6Ly8xMC4xMC4xMjguNjQvcmVnaXN0ZXIucGhwDQpDb29raWU6IFBIUFNFU1NJRD1wMThoZmExbjk1NGNjcHRtdTN2bjNnZ2xhdA0KVXBncmFkZS1JbnNlY3VyZS1SZXF1ZXN0czogMQ0KDQpsb2dfZW1haWw9dGVzdCU0MHRlc3QuY29tJmxvZ19wYXNzd29yZD10ZXN0MTIzJmxvZ2luX2J1dHRvbj1Mb2dpbg==]]></request>
+    <status></status>
+    <responselength></responselength>
+    <mimetype></mimetype>
+    <response base64="true"></response>
+    <comment></comment>
+  </item>
+</items>

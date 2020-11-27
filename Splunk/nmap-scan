@@ -1,0 +1,24 @@
+# Nmap 7.80 scan initiated Sun Nov 22 22:56:04 2020 as: nmap -sC -sV -oN nmap-scan 10.10.75.9
+Nmap scan report for 10.10.75.9
+Host is up (0.76s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE  VERSION
+22/tcp   open  ssh      OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 d0:e9:2c:b7:97:56:07:6e:db:b1:1d:1f:cb:35:9d:60 (RSA)
+|   256 d8:f5:a3:36:93:f4:41:2c:0d:bd:09:cb:28:97:50:7b (ECDSA)
+|_  256 42:3e:4d:14:45:35:46:58:b8:82:06:23:ed:ae:4c:10 (ED25519)
+8000/tcp open  http     Splunkd httpd
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: Splunkd
+| http-title: Site doesn't have a title (text/html; charset=UTF-8).
+|_Requested resource was http://10.10.75.9:8000/en-US/account/login?return_to=%2Fen-US%2F
+8089/tcp open  ssl/http Splunkd httpd
+| ssl-cert: Subject: commonName=SplunkServerDefaultCert/organizationName=SplunkUser
+| Not valid before: 2019-06-15T21:33:31
+|_Not valid after:  2022-06-14T21:33:31
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Nov 22 22:58:13 2020 -- 1 IP address (1 host up) scanned in 128.91 seconds

@@ -1,0 +1,27 @@
+# Nmap 7.80 scan initiated Tue Nov 24 12:34:14 2020 as: nmap -sC -sV -oN day24-nmap-scan 10.10.9.186
+Nmap scan report for 10.10.9.186
+Host is up (0.70s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 0a:ee:6d:36:10:72:ce:f0:ef:40:9e:63:52:a9:86:44 (RSA)
+|   256 11:6e:8f:7f:15:66:e3:03:b1:c4:55:f8:e7:bb:59:23 (ECDSA)
+|_  256 b3:12:7a:7f:ac:89:72:c9:25:88:96:20:ad:c7:5b:4a (ED25519)
+111/tcp  open  rpcbind 2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|_  100000  3,4          111/udp6  rpcbind
+8000/tcp open  http    SimpleHTTPServer 0.6 (Python 3.7.4)
+|_http-server-header: SimpleHTTP/0.6 Python/3.7.4
+|_http-title: Directory listing for /
+9200/tcp open  http    Elasticsearch REST API 6.4.2 (name: sn6hfBl; cluster: elasticsearch; Lucene 7.4.0)
+| http-methods: 
+|_  Potentially risky methods: DELETE
+|_http-title: Site doesn't have a title (application/json; charset=UTF-8).
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Nov 24 12:36:17 2020 -- 1 IP address (1 host up) scanned in 123.51 seconds

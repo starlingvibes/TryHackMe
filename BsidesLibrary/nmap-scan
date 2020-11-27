@@ -1,0 +1,19 @@
+# Nmap 7.80 scan initiated Wed Nov 25 16:29:50 2020 as: nmap -sC -sV -oN nmap-scan 10.10.95.89
+Nmap scan report for 10.10.95.89
+Host is up (0.69s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 c4:2f:c3:47:67:06:32:04:ef:92:91:8e:05:87:d5:dc (RSA)
+|   256 68:92:13:ec:94:79:dc:bb:77:02:da:99:bf:b6:9d:b0 (ECDSA)
+|_  256 43:e8:24:fc:d8:b8:d3:aa:c2:48:08:97:51:dc:5b:7d (ED25519)
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Welcome to  Blog - Library Machine
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Nov 25 16:31:04 2020 -- 1 IP address (1 host up) scanned in 74.99 seconds
