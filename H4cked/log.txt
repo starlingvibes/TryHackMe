@@ -1,0 +1,13 @@
+# Nmap 7.92 scan initiated Fri Jan  6 05:08:01 2023 as: nmap -sC -oN ../Documents/TryHackMe/H4cked/log.txt -v 10.10.133.219
+Nmap scan report for 10.10.133.219
+Host is up (0.25s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE
+21/tcp open  ftp
+80/tcp open  http
+| http-methods: 
+|_  Supported Methods: POST OPTIONS HEAD GET
+|_http-title: Apache2 Ubuntu Default Page: It works
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Fri Jan  6 05:08:12 2023 -- 1 IP address (1 host up) scanned in 10.85 seconds
